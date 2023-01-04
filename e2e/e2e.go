@@ -1,2 +1,2 @@
-// Package e2e contains end to end tests for pion/dtls
+// Package e2e contains end to end tests for neobilitly/dtls
 package e2e

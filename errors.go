@@ -8,8 +8,8 @@ import (
 	"net"
 	"os"
 
-	"github.com/pion/dtls/v2/pkg/protocol"
-	"github.com/pion/dtls/v2/pkg/protocol/alert"
+	"github.com/neobilitly/dtls/v2/pkg/protocol"
+	"github.com/neobilitly/dtls/v2/pkg/protocol/alert"
 )
 
 // Typed errors

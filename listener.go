@@ -3,8 +3,8 @@ package dtls
 import (
 	"net"
 
-	"github.com/pion/dtls/v2/pkg/protocol"
-	"github.com/pion/dtls/v2/pkg/protocol/recordlayer"
+	"github.com/neobilitly/dtls/v2/pkg/protocol"
+	"github.com/neobilitly/dtls/v2/pkg/protocol/recordlayer"
 	"github.com/pion/udp"
 )
 

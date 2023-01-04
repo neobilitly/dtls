@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pion/dtls/v2"
-	"github.com/pion/dtls/v2/pkg/crypto/selfsign"
+	"github.com/neobilitly/dtls/v2"
+	"github.com/neobilitly/dtls/v2/pkg/crypto/selfsign"
 	transportTest "github.com/pion/transport/test"
 )
 

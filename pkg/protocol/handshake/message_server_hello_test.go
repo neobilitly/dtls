@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pion/dtls/v2/pkg/protocol"
-	"github.com/pion/dtls/v2/pkg/protocol/extension"
+	"github.com/neobilitly/dtls/v2/pkg/protocol"
+	"github.com/neobilitly/dtls/v2/pkg/protocol/extension"
 )
 
 func TestHandshakeMessageServerHello(t *testing.T) {
