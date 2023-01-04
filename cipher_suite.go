@@ -39,6 +39,8 @@ const (
 	TLS_PSK_WITH_AES_128_GCM_SHA256 CipherSuiteID = ciphersuite.TLS_PSK_WITH_AES_128_GCM_SHA256 //nolint:revive,stylecheck
 	TLS_PSK_WITH_AES_128_CBC_SHA256 CipherSuiteID = ciphersuite.TLS_PSK_WITH_AES_128_CBC_SHA256 //nolint:revive,stylecheck
 
+	TLS_PSK_WITH_AES_128_CBC_SHA CipherSuiteID = ciphersuite.TLS_PSK_WITH_AES_128_CBC_SHA //nolint:revive,stylecheck
+
 	TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256 CipherSuiteID = ciphersuite.TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256 //nolint:revive,stylecheck
 )
 
@@ -135,6 +137,8 @@ func cipherSuiteForID(id CipherSuiteID, customCiphers func() []CipherSuite) Ciph
 		return &ciphersuite.TLSPskWithAes128GcmSha256{}
 	case TLS_PSK_WITH_AES_128_CBC_SHA256:
 		return &ciphersuite.TLSPskWithAes128CbcSha256{}
+	case TLS_PSK_WITH_AES_128_CBC_SHA:
+		return &ciphersuite.TLSPskWithAes128CbcSha{}
 	case TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:
 		return &ciphersuite.TLSEcdheEcdsaWithAes256GcmSha384{}
 	case TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:
