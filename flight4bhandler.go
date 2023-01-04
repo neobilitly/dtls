@@ -112,29 +112,29 @@ func flight4bGenerate(c flightConn, state *State, cache *handshakeCache, cfg *ha
 				Content: serverHello,
 			},
 		},
-		&packet{
-			record: &recordlayer.RecordLayer{
-				Header: recordlayer.Header{
-					Version: protocol.Version1_2,
-				},
-				Content: &protocol.ChangeCipherSpec{},
-			},
-		},
-		&packet{
-			record: &recordlayer.RecordLayer{
-				Header: recordlayer.Header{
-					Version: protocol.Version1_2,
-					Epoch:   1,
-				},
-				Content: &handshake.Handshake{
-					Message: &handshake.MessageFinished{
-						VerifyData: state.localVerifyData,
-					},
-				},
-			},
-			shouldEncrypt:            true,
-			resetLocalSequenceNumber: true,
-		},
+		//&packet{
+		//	record: &recordlayer.RecordLayer{
+		//		Header: recordlayer.Header{
+		//			Version: protocol.Version1_2,
+		//		},
+		//		Content: &protocol.ChangeCipherSpec{},
+		//	},
+		//},
+		//&packet{
+		//	record: &recordlayer.RecordLayer{
+		//		Header: recordlayer.Header{
+		//			Version: protocol.Version1_2,
+		//			Epoch:   1,
+		//		},
+		//		Content: &handshake.Handshake{
+		//			Message: &handshake.MessageFinished{
+		//				VerifyData: state.localVerifyData,
+		//			},
+		//		},
+		//	},
+		//	shouldEncrypt:            true,
+		//	resetLocalSequenceNumber: true,
+		//},
 	)
 
 	return pkts, nil, nil
