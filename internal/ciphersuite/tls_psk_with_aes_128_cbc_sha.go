@@ -38,7 +38,7 @@ func (c *TLSPskWithAes128CbcSha) ID() ID {
 }
 
 func (c *TLSPskWithAes128CbcSha) String() string {
-	return "TLS_PSK_WITH_AES_128_CBC_SHA"
+	return "TLS_PSK_WITH_AES_128_CBC_SHA256"
 }
 
 // HashFunc returns the hashing func for this CipherSuite
